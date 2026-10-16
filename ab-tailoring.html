@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AB TAILORING | Bespoke Tailoring & Formalwear</title>
+<meta name="description" content="AB TAILORING: premium bespoke suits, wedding attire, barong and custom-made garments. Book a consultation.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1e8;--bg2:#ece4d6;--ink:#1d1d1b;--mute:#5d5a52;--line:#cfc4b0;--dark:#1d1d1b;--on-dark:#f6f1e8;--beige:#d8cbb5;
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171715;--bg2:#21201d;--ink:#f1ebdf;--mute:#a8a294;--line:#3a3832;--dark:#0e0e0d;--on-dark:#f1ebdf}}
+:root[data-theme="dark"]{--bg:#171715;--bg2:#21201d;--ink:#f1ebdf;--mute:#a8a294;--line:#3a3832;--dark:#0e0e0d;--on-dark:#f1ebdf}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
+h1{font-size:clamp(2.8rem,6.5vw,5.6rem)}h2{font-size:clamp(2rem,4vw,3.3rem)}h3{font-size:1.6rem}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin:0 0 18px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}section{padding:110px 0}
+.btn{display:inline-block;padding:15px 30px;border:1px solid var(--ink);font-size:11px;letter-spacing:.22em;text-transform:uppercase;background:none;color:var(--ink);cursor:pointer;font-family:var(--sans);transition:.3s}
+.btn.solid{background:var(--ink);color:var(--bg)}.btn:hover{background:var(--ink);color:var(--bg)}.btn.solid:hover{background:none;color:var(--ink)}
+.btn.light{border-color:var(--on-dark);color:var(--on-dark)}.btn.light.solid{background:var(--on-dark);color:var(--dark)}.btn.light:hover{background:var(--on-dark);color:var(--dark)}.btn.light.solid:hover{background:none;color:var(--on-dark)}
+.link{font-size:11px;letter-spacing:.22em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:4px}
+.ann{background:var(--dark);color:var(--on-dark);text-align:center;font-size:10.5px;letter-spacing:.26em;padding:10px 14px}
+header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-family:var(--serif);font-size:1.7rem;letter-spacing:.3em;font-weight:500}
+nav ul{display:flex;gap:34px;list-style:none;margin:0;padding:0;align-items:center}
+nav a.t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:28px 0;display:block}
+nav a.t:hover{opacity:.55}
+.dd{position:relative}.dd .menu{position:absolute;top:100%;left:-24px;background:var(--bg);border:1px solid var(--line);min-width:230px;padding:14px 0;opacity:0;visibility:hidden;transform:translateY(6px);transition:.25s}
+.dd:hover .menu,.dd:focus-within .menu{opacity:1;visibility:visible;transform:none}
+.menu a{display:block;padding:8px 24px;font-size:13px;color:var(--mute)}.menu a:hover{color:var(--ink);background:var(--bg2)}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+.burger span{display:block;width:24px;height:1px;background:currentColor;margin:7px auto;transition:.3s}
+.mob{display:none}
+@media(max-width:960px){nav,.nav>.btn{display:none}.burger{display:block}
+.mob{position:fixed;inset:0 0 0 0;top:calc(76px + 34px);background:var(--bg);padding:30px 28px;overflow:auto;z-index:40;transform:translateX(100%);transition:.35s;display:block;visibility:hidden}
+.mob.open{transform:none;visibility:visible}.mob a.t{display:block;font-family:var(--serif);font-size:2rem;padding:12px 0;border-bottom:1px solid var(--line)}.mob .btn{margin-top:30px}
+.burger.open span:first-child{transform:translateY(4px) rotate(45deg)}.burger.open span:last-child{transform:translateY(-4px) rotate(-45deg)}}
+/* art panels */
+.art{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--c1,#3a3a37),var(--c2,#1d1d1b));display:flex;align-items:flex-end;justify-content:center;color:rgba(255,255,255,.9)}
+.art svg{width:62%;height:auto;max-height:92%;opacity:.9}
+.art::after{content:attr(data-tag);position:absolute;left:14px;bottom:12px;font-size:9px;letter-spacing:.2em;text-transform:uppercase;opacity:.55}
+.hero{padding:0;display:grid;grid-template-columns:1fr 1.05fr;min-height:calc(100vh - 110px);min-height:calc(100svh - 110px)}
+.hero .copy{display:flex;flex-direction:column;justify-content:center;padding:70px 6vw}
+.hero p.lead{max-width:480px;color:var(--mute);margin:26px 0 38px;font-size:16px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}.hero .art{--c1:#cfc1a8;--c2:#4b4a45;min-height:480px}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+.split .art{aspect-ratio:4/5;--c1:#8c826f;--c2:#2a2a28}.split p{color:var(--mute);max-width:470px;margin:24px 0 36px}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:50px;gap:20px;flex-wrap:wrap}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.col .art{aspect-ratio:3/4;transition:.5s}.col:hover .art{filter:brightness(1.12)}
+.col h3{margin:18px 0 8px}.col .link{color:var(--mute)}
+.prods{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.prod .art{aspect-ratio:4/5}.prod h3{font-size:1.35rem;margin:16px 0 4px}.prod p{margin:0 0 6px;color:var(--mute);font-size:13.5px}
+.price{font-family:var(--serif);font-size:1.2rem}.note{font-size:12px;color:var(--mute);margin-top:34px;font-style:italic}
+.band{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:56px}
+.step{padding:34px 28px 10px 0}.step+.step{padding-left:28px;border-left:1px solid var(--line)}
+.step b{font-family:var(--serif);font-size:3rem;font-weight:400;color:var(--beige)}.step h3{margin:6px 0 10px;font-size:1.5rem}.step p{color:var(--mute);margin:0;font-size:14px}
+.dark{background:var(--dark);color:var(--on-dark)}.dark .eyebrow,.dark p{color:#b9b2a3}
+.dark .split .art{--c1:#5a5347;--c2:#171715}.dark ul{list-style:none;padding:0;margin:0 0 34px;color:#d9d2c3}.dark li{padding:10px 0;border-bottom:1px solid #3a3832}
+.consult{display:grid;grid-template-columns:1fr 1.1fr;gap:90px;align-items:start}.consult>div>p{color:var(--mute);max-width:420px;margin-top:22px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px}.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+input,select,textarea{font:inherit;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);padding:10px 0;border-radius:0;outline:none;transition:.2s}
+select option{background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-bottom-color:var(--ink)}.err{color:#a8452f;font-size:12px;min-height:16px}
+.bad{border-bottom-color:#a8452f}
+#msg{grid-column:1/-1;padding:16px 18px;border:1px solid var(--line);display:none;font-size:14px}#msg.ok{display:block;background:var(--bg2)}
+.demo{font-size:11.5px;color:var(--mute);grid-column:1/-1;margin:0}
+footer{background:var(--dark);color:var(--on-dark);padding:80px 0 30px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:50px}.fg p,.fg a{color:#b9b2a3;font-size:14px}.fg a{display:block;margin:6px 0}.fg a:hover{color:var(--on-dark)}
+.fg h4{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 16px;font-weight:500}
+.copy2{border-top:1px solid #3a3832;margin-top:60px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:12px;color:#8d8778}.copy2 a{margin-left:20px}
+.rv{opacity:0;transform:translateY(18px);transition:1s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media(max-width:960px){section{padding:72px 0}.hero{grid-template-columns:1fr}.hero .art{order:-1;min-height:380px}.hero .copy{padding:50px 28px}
+.split,.consult{grid-template-columns:1fr;gap:44px}.cols,.prods{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(3){padding-left:0;border-left:0}.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.wrap{padding:0 20px}.cols,.prods{gap:14px}.steps{grid-template-columns:1fr}.step,.step+.step{padding:26px 0 8px;border-left:0}form{grid-template-columns:1fr}.fg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="jacket" viewBox="0 0 200 260"><path fill="currentColor" d="M72 8l28 30 28-30 40 26 24 70-16 8-10-30v176H34V82L24 112 8 104l24-70z" opacity=".16"/><path fill="none" stroke="currentColor" stroke-width="1.3" d="M72 8l28 30 28-30M100 38l-18 80 18 142M100 38l18 80-18 142M72 8L32 34 8 104l16 8 10-30M128 8l40 26 24 70-16 8-10-30M34 82v178h132V82M86 150h-0M114 150h0"/><circle cx="100" cy="150" r="2.5" fill="currentColor"/><circle cx="100" cy="190" r="2.5" fill="currentColor"/></symbol>
+<symbol id="shirt" viewBox="0 0 200 260"><path fill="none" stroke="currentColor" stroke-width="1.3" d="M70 10l30 24 30-24 44 30 20 70-22 8-8-26v168H36V92l-8 26-22-8 20-70zM100 34v226M84 20l16 22 16-22"/></symbol>
+<symbol id="tie" viewBox="0 0 200 260"><path fill="currentColor" opacity=".16" d="M88 20h24l8 30-20 12-20-12z"/><path fill="none" stroke="currentColor" stroke-width="1.3" d="M88 20h24l8 30-20 12-20-12zM92 62l-14 160 22 28 22-28-14-160"/></symbol>
+</svg>
+
+<div class="ann">CRAFTED FOR YOUR FIT. DESIGNED FOR YOUR MOMENT.</div>
+<header>
+<div class="wrap nav">
+<a href="#top" class="logo" aria-label="AB Tailoring home">AB TAILORING</a>
+<nav aria-label="Primary"><ul>
+<li><a class="t" href="#bespoke">Bespoke Tailoring</a></li>
+<li class="dd"><a class="t" href="#featured" aria-haspopup="true">Ready-to-Wear</a><div class="menu"><a href="#featured">Suits & Coats</a><a href="#featured">Shirts & Trousers</a><a href="#collections">Barong</a><a href="#featured">Accessories</a></div></li>
+<li class="dd"><a class="t" href="#collections" aria-haspopup="true">Collections</a><div class="menu"><a href="#collections">Bespoke Suits</a><a href="#collections">Wedding & Formalwear</a><a href="#collections">Barong & Filipino Formalwear</a><a href="#collections">Shirts & Trousers</a></div></li>
+<li><a class="t" href="#craft">Our Craft</a></li>
+<li><a class="t" href="#contact">Contact</a></li>
+</ul></nav>
+<a class="btn solid" href="#consultation">Book a Consultation</a>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+</div>
+</header>
+<div class="mob" id="mob">
+<a class="t" href="#bespoke">Bespoke Tailoring</a><a class="t" href="#featured">Ready-to-Wear</a><a class="t" href="#collections">Collections</a><a class="t" href="#craft">Our Craft</a><a class="t" href="#contact">Contact</a>
+<a class="btn solid" href="#consultation">Book a Consultation</a>
+</div>
+
+<main id="top">
+<section class="hero" style="padding:0">
+<div class="copy">
+<p class="eyebrow">The Art of Personal Tailoring</p>
+<h1>A Perfect Fit.<br><em>A Lasting Impression.</em></h1>
+<p class="lead">Discover the art of tailored dressing, where every detail is considered and every piece is made to complement your individuality.</p>
+<div class="btns"><a class="btn solid" href="#bespoke">Explore Bespoke</a><a class="btn" href="#consultation">Book a Consultation</a></div>
+</div>
+<div class="art" data-tag="Hero photography placeholder"><svg><use href="#jacket"/></svg></div>
+</section>
+
+<section id="bespoke"><div class="wrap split rv">
+<div class="art" data-tag="Tailor at work placeholder" style="--c1:#9a8f7a"><svg><use href="#jacket"/></svg></div>
+<div>
+<p class="eyebrow">Bespoke Tailoring</p>
+<h2>Made around you, from cloth to final fit.</h2>
+<p>Every AB Tailoring garment begins with a conversation. We take your measurements, guide you through cloth and cut, and refine the fit until the silhouette feels unmistakably yours. The result is tailoring shaped by your posture, your preferences, and your occasion.</p>
+<a class="btn" href="#craft">Discover Our Craft</a>
+</div></div></section>
+
+<section id="collections" class="band"><div class="wrap">
+<div class="head rv"><div><p class="eyebrow">Featured Collections</p><h2>Dressed for every occasion</h2></div></div>
+<div class="cols rv">
+<a class="col" href="#collections"><div class="art" data-tag="Photo placeholder" style="--c1:#4a4d55;--c2:#1b1c20"><svg><use href="#jacket"/></svg></div><h3>Bespoke Suits</h3><span class="link">Explore Collection</span></a>
+<a class="col" href="#wedding"><div class="art" data-tag="Photo placeholder" style="--c1:#d9cfbc;--c2:#7d745f"><svg><use href="#jacket"/></svg></div><h3>Wedding & Formalwear</h3><span class="link">Explore Collection</span></a>
+<a class="col" href="#collections"><div class="art" data-tag="Photo placeholder" style="--c1:#efe8d6;--c2:#a89c80"><svg><use href="#shirt"/></svg></div><h3>Barong & Filipino Formalwear</h3><span class="link">Explore Collection</span></a>
+<a class="col" href="#collections"><div class="art" data-tag="Photo placeholder" style="--c1:#8e98a3;--c2:#3d434b"><svg><use href="#shirt"/></svg></div><h3>Custom Shirts & Trousers</h3><span class="link">Explore Collection</span></a>
+</div></div></section>
+
+<section id="featured"><div class="wrap">
+<div class="head rv"><div><p class="eyebrow">Featured Pieces</p><h2>Ready-to-wear essentials</h2></div><a class="link" href="#consultation">Inquire about sizing</a></div>
+<div class="prods rv">
+<article class="prod"><div class="art" data-tag="Product placeholder" style="--c1:#2b3446;--c2:#12151c"><svg><use href="#jacket"/></svg></div><h3>Midnight Navy Suit</h3><p>Single-breasted two-piece in a fine wool blend.</p><span class="price">₱ 23,500</span><br><a class="link" href="#consultation">Inquire now</a></article>
+<article class="prod"><div class="art" data-tag="Product placeholder" style="--c1:#b9ad96;--c2:#6d6552"><svg><use href="#jacket"/></svg></div><h3>Sandstone Linen Jacket</h3><p>Lightweight, breathable tailoring for warm days.</p><span class="price">₱ 12,500</span><br><a class="link" href="#consultation">Inquire now</a></article>
+<article class="prod"><div class="art" data-tag="Product placeholder" style="--c1:#f0ead9;--c2:#b4a888"><svg><use href="#shirt"/></svg></div><h3>Classic Barong</h3><p>Refined Filipino formalwear with a clean, modern cut.</p><span class="price">₱ 9,800</span><br><a class="link" href="#consultation">Inquire now</a></article>
+<article class="prod"><div class="art" data-tag="Product placeholder" style="--c1:#6c6a66;--c2:#2a2927"><svg><use href="#shirt"/></svg></div><h3>Straight-Cut Trousers</h3><p>Pressed crease, comfortable rise, easy drape.</p><span class="price">₱ 8,500</span><br><a class="link" href="#consultation">Inquire now</a></article>
+</div>
+<p class="note">Sample prices for demonstration only. Final prices are subject to confirmation.</p>
+</div></section>
+
+<section id="craft" class="band"><div class="wrap">
+<div class="rv" style="max-width:640px"><p class="eyebrow">The AB Tailoring Experience</p><h2>A considered process, from first meeting to final press</h2></div>
+<div class="steps rv">
+<div class="step"><b>01</b><h3>Consultation</h3><p>We discuss your occasion, lifestyle, and the look you have in mind.</p></div>
+<div class="step"><b>02</b><h3>Fabric & Style</h3><p>Choose cloth, cut, lapel, and details that suit you.</p></div>
+<div class="step"><b>03</b><h3>Measures & Fittings</h3><p>Precise measurements, then fittings to refine balance and comfort.</p></div>
+<div class="step"><b>04</b><h3>Finishing</h3><p>Final adjustments and pressing so the garment is ready to wear.</p></div>
+</div></div></section>
+
+<section id="wedding" class="dark"><div class="wrap split rv">
+<div>
+<p class="eyebrow">Weddings & Special Occasions</p>
+<h2>For the day you will remember.</h2>
+<p>From groom and groomsmen to formal evenings and milestone celebrations, we help you build a look that photographs beautifully and feels comfortable from the first toast to the last dance.</p>
+<ul><li>Groom and groomsmen suits</li><li>Barong and Filipino formalwear</li><li>Tuxedos and evening wear</li></ul>
+<a class="btn light solid" href="#consultation" data-service="Wedding / Groom Attire">Plan Your Look</a>
+</div>
+<div class="art" data-tag="Wedding photography placeholder"><svg><use href="#jacket"/></svg></div>
+</div></section>
+
+<section id="consultation"><div class="wrap consult">
+<div class="rv"><p class="eyebrow">Book a Consultation</p><h2>Your Next Signature Look Starts Here.</h2>
+<p>Tell us about your occasion, your preferences, and the fit you're looking for. Let's create something that feels distinctly yours.</p></div>
+<form id="form" novalidate class="rv">
+<div class="f"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name"><span class="err" data-for="name"></span></div>
+<div class="f"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" data-for="email"></span></div>
+<div class="f"><label for="phone">Contact number *</label><input id="phone" name="phone" type="tel" autocomplete="tel"><span class="err" data-for="phone"></span></div>
+<div class="f"><label for="service">Type of service *</label><select id="service" name="service"><option value="">Select a service</option><option>Bespoke Suit</option><option>Wedding / Groom Attire</option><option>Barong / Filipino Formalwear</option><option>Custom Shirts & Trousers</option><option>Ready-to-Wear / Alterations</option></select><span class="err" data-for="service"></span></div>
+<div class="f"><label for="cdate">Preferred consultation date *</label><input id="cdate" name="cdate" type="date"><span class="err" data-for="cdate"></span></div>
+<div class="f"><label for="edate">Event date (if applicable)</label><input id="edate" name="edate" type="date"></div>
+<div class="f full"><label for="notes">Additional notes</label><textarea id="notes" name="notes" rows="3"></textarea></div>
+<div class="f full"><button class="btn solid" type="submit">Book a Consultation</button></div>
+<div id="msg" role="status" aria-live="polite"></div>
+<p class="demo">Demo form: no backend is connected, so nothing is actually sent or stored.</p>
+</form></div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div class="fg">
+<div><div class="logo">AB TAILORING</div><p style="margin-top:16px;max-width:300px">Premium tailoring, formalwear, and custom-made garments, made to fit you and your moment.</p></div>
+<div><h4>Explore</h4><a href="#bespoke">Bespoke Tailoring</a><a href="#featured">Ready-to-Wear</a><a href="#collections">Collections</a><a href="#craft">Our Craft</a></div>
+<div><h4>Follow</h4><a href="#contact">Facebook [URL placeholder]</a><a href="#contact">Instagram [URL placeholder]</a><a href="#contact">TikTok [URL placeholder]</a></div>
+<div><h4>Contact</h4><p>[Business address placeholder]<br>[Phone number placeholder]<br>[Email address placeholder]<br>[Business hours placeholder]</p></div>
+</div>
+<div class="copy2"><span>© 2026 AB TAILORING. Demo website.</span><span><a href="#contact">Privacy Policy</a><a href="#contact">Terms</a></span></div>
+</div></footer>
+
+<script>
+(function(){
+var b=document.getElementById('burger'),m=document.getElementById('mob');
+function tog(o){b.classList.toggle('open',o);m.classList.toggle('open',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+b.onclick=function(){tog(!m.classList.contains('open'))};
+m.querySelectorAll('a').forEach(function(a){a.onclick=function(){tog(false)}});
+document.querySelectorAll('[data-service]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('service').value=a.dataset.service})});
+var d=document.getElementById('cdate');d.min=new Date().toISOString().slice(0,10);
+var f=document.getElementById('form'),msg=document.getElementById('msg');
+var rules={name:function(v){return v.trim().length>=2||'Please enter your full name.'},
+email:function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())||'Please enter a valid email address.'},
+phone:function(v){return v.replace(/\D/g,'').length>=7||'Please enter a valid contact number.'},
+service:function(v){return !!v||'Please select a service.'},
+cdate:function(v){return !!v||'Please choose a preferred date.'}};
+function check(k){var el=f.elements[k],r=rules[k](el.value),e=f.querySelector('[data-for='+k+']');
+e.textContent=r===true?'':r;el.classList.toggle('bad',r!==true);el.setAttribute('aria-invalid',r!==true);return r===true}
+Object.keys(rules).forEach(function(k){f.elements[k].addEventListener('blur',function(){check(k)})});
+f.addEventListener('submit',function(ev){ev.preventDefault();
+var ok=Object.keys(rules).map(check).every(Boolean);msg.className='';msg.style.display='';
+if(!ok){msg.style.display='block';msg.style.borderColor='#a8452f';msg.textContent='Please correct the highlighted fields and try again.';var bad=f.querySelector('.bad');if(bad)bad.focus();return}
+msg.style.borderColor='';msg.className='ok';
+msg.textContent='Demo only: your details passed validation, but no inquiry was sent because this sample site has no backend connected.';f.reset()});
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12}):null;
+document.querySelectorAll('.rv').forEach(function(e){io?io.observe(e):e.classList.add('in')});
+})();
+</script>
+</body>
+</html>
